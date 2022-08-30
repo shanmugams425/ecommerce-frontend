@@ -87,6 +87,7 @@ export default function AdminProductsList() {
       );
       setLoading(false);
       setImages(response.data);
+      console.log(response.data);
     } catch (err) {
       Swal.fire(err.response.data.msg);
     }
