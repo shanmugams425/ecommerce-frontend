@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 let initialState = {
   product_id: "",
   title: "",
-  price: 0,
+  price: "",
   description: "",
   content: "",
   category: "",
@@ -373,7 +373,9 @@ export default function AdminProductsList() {
                         className="order__image"
                       />
                     </TableCell>
-                    <TableCell className="order__item">{item.price}$</TableCell>
+                    <TableCell className="order__item">
+                      {item.price}&#8377;
+                    </TableCell>
                     <TableCell className="order__item">{item.sold}</TableCell>
                     <TableCell className="order__item">
                       {item.category}

@@ -152,7 +152,7 @@ export default function Cart() {
                         {item.category}
                       </TableCell>
                       <TableCell className="table__item">
-                        ${item.price}
+                        &#8377;{item.price}
                       </TableCell>
                       <TableCell className="table__item">
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -194,7 +194,7 @@ export default function Cart() {
                       className="table__item total__price"
                       align="right"
                     >
-                      <strong>${Math.round(total * 1000) / 1000}</strong>
+                      <strong>&#8377;{Math.round(total * 1000) / 1000}</strong>
                     </TableCell>
                     <TableCell
                       className="table__item"
