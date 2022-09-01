@@ -49,7 +49,7 @@ export default function Orders() {
                 })}
               </TableCell>
               <TableCell className="order__item" align="right">
-                &#8377;
+                $
                 {item.cart.reduce(
                   (prev, cartItem) => prev + cartItem.quantity * cartItem.price,
                   0

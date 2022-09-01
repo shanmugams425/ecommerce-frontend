@@ -152,7 +152,7 @@ export default function Cart() {
                         {item.category}
                       </TableCell>
                       <TableCell className="table__item">
-                        &#8377;{item.price}
+                        ${item.price}
                       </TableCell>
                       <TableCell className="table__item">
                         <div style={{ display: "flex", alignItems: "center" }}>

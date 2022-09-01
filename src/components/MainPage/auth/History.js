@@ -72,7 +72,7 @@ export default function History() {
                           })}
                         </TableCell>
                         <TableCell className="history__item" align="right">
-                          &#8377;
+                          $
                           {item.cart.reduce(
                             (prev, cartItem) =>
                               prev + cartItem.quantity * cartItem.price,

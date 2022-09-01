@@ -32,7 +32,7 @@ export default function ProductItem({ product }) {
             ) : (
               <p>{product.title}</p>
             )}
-            <h3>Price: &#8377;{product.price}</h3>
+            <h3>Price: ${product.price}</h3>
           </div>
         </div>
       </Link>
