@@ -24,7 +24,7 @@ export default function Header() {
 
   const logoutUser = async () => {
     await axios.get(
-      `https://ecommerce-backend-nine.vercel.app/server.js/user/logout`
+      `https://vercel.com/shanmugams425/ecommerce-backend/mDfBQMubfEqUyZL8QrvHL6ThkiJo/user/logout`
     );
     localStorage.removeItem("Login");
     localStorage.removeItem("refreshtoken");
