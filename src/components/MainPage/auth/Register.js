@@ -29,7 +29,7 @@ export default function Register() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://ecomerce234.herokuapp.com/user/register",
+        "https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/register",
         { ...user }
       );
       localStorage.setItem("refreshtoken", response.data.accesstoken);

@@ -23,7 +23,9 @@ export default function Header() {
   };
 
   const logoutUser = async () => {
-    await axios.get(`https://ecomerce234.herokuapp.com/user/logout`);
+    await axios.get(
+      `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/logout`
+    );
     localStorage.removeItem("Login");
     localStorage.removeItem("refreshtoken");
     window.location.href = "/";

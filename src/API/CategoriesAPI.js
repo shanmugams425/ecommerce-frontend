@@ -8,7 +8,7 @@ export default function CategoriesAPI() {
   useEffect(() => {
     const getCategories = async () => {
       const response = await axios.get(
-        `https://ecomerce234.herokuapp.com/api/category`
+        `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/category`
       );
       setCategories(response.data);
     };

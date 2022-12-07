@@ -32,7 +32,7 @@ export default function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://ecomerce234.herokuapp.com/user/login",
+        "https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/login",
         { ...user }
       );
       localStorage.setItem("Login", true);

@@ -12,7 +12,7 @@ export default function ProductsAPI() {
 
   useEffect(() => {
     const getProducts = async () => {
-      let link = `https://ecomerce234.herokuapp.com/api/products?limit=${
+      let link = `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/products?limit=${
         page * 9
       }&${category}&${sort}&title[regex]=${search}`;
       const response = await axios.get(link);
