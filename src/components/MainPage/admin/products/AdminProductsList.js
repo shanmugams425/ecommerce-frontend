@@ -76,7 +76,7 @@ export default function AdminProductsList() {
       formData.append("file", file);
       setLoading(true);
       const response = await axios.post(
-        `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/upload`,
+        `https://ecommerce-backend-nine.vercel.app/server.js/api/upload`,
         formData,
         {
           headers: {
@@ -104,7 +104,7 @@ export default function AdminProductsList() {
       if (!isAdmin) return Swal.fire("You're not an admin");
       setLoading(true);
       await axios.post(
-        "https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/destroy",
+        "https://ecommerce-backend-nine.vercel.app/server.js/api/destroy",
         { public_id: images.public_id },
         {
           Authorization: token,
@@ -133,7 +133,7 @@ export default function AdminProductsList() {
         );
       } else {
         await axios.post(
-          `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/products`,
+          `https://ecommerce-backend-nine.vercel.app/server.js/api/products`,
           { ...product, images },
           {
             headers: { Authorization: token },
@@ -151,14 +151,14 @@ export default function AdminProductsList() {
     try {
       setLoading(true);
       const destroyImg = axios.post(
-        `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/destroy`,
+        `https://ecommerce-backend-nine.vercel.app/server.js/api/destroy`,
         { public_id },
         {
           headers: { Authorization: token },
         }
       );
       const deleteProduct = axios.delete(
-        `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/products/${id}`,
+        `https://ecommerce-backend-nine.vercel.app/server.js/api/products/${id}`,
         {
           headers: { Authorization: token },
         }

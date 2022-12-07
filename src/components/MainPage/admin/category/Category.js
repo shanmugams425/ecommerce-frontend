@@ -23,7 +23,7 @@ export default function Category() {
     try {
       if (edit) {
         const response = await axios.put(
-          `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/category/${id}`,
+          `https://ecommerce-backend-nine.vercel.app/server.js/api/category/${id}`,
           { name: category },
           {
             headers: { Authorization: token },
@@ -32,7 +32,7 @@ export default function Category() {
         Swal.fire("Success!", response.data.msg, "success");
       } else {
         const response = await axios.post(
-          `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/category`,
+          `https://ecommerce-backend-nine.vercel.app/server.js/api/category`,
           { name: category },
           {
             headers: { Authorization: token },
@@ -55,7 +55,7 @@ export default function Category() {
   const deleteCategory = async (id) => {
     try {
       const response = await axios.delete(
-        `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/category/${id}`,
+        `https://ecommerce-backend-nine.vercel.app/server.js/api/category/${id}`,
         {
           headers: { Authorization: token },
         }

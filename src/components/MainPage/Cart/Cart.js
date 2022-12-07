@@ -35,7 +35,7 @@ export default function Cart() {
 
   const addToCart = async (cart) => {
     await axios.patch(
-      "https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/addcart",
+      "https://ecommerce-backend-nine.vercel.app/server.js/user/addcart",
       { cart },
       {
         headers: { Authorization: token },
@@ -78,7 +78,7 @@ export default function Cart() {
   const tranSuccess = async (payment) => {
     const { paymentID, address } = payment;
     await axios.post(
-      `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/payment`,
+      `https://ecommerce-backend-nine.vercel.app/server.js/api/payment`,
       { cart, paymentID, address },
       {
         headers: { Authorization: token },

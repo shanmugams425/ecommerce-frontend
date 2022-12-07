@@ -15,7 +15,7 @@ export default function UserAPI(token) {
       const getUser = async () => {
         try {
           const response = await axios.get(
-            `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/infor`,
+            `https://ecommerce-backend-nine.vercel.app/server.js/user/infor`,
             {
               headers: { Authorization: token },
             }
@@ -41,7 +41,7 @@ export default function UserAPI(token) {
       const getHistory = async () => {
         if (isAdmin) {
           const response = await axios.get(
-            `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/api/payment`,
+            `https://ecommerce-backend-nine.vercel.app/server.js/api/payment`,
             {
               headers: { Authorization: token },
             }
@@ -49,7 +49,7 @@ export default function UserAPI(token) {
           setHistory(response.data);
         } else {
           const response = await axios.get(
-            `https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/history`,
+            `https://ecommerce-backend-nine.vercel.app/server.js/user/history`,
             {
               headers: { Authorization: token },
             }
@@ -72,7 +72,7 @@ export default function UserAPI(token) {
     if (check) {
       setCart([...cart, { ...product, quantity: 1 }]);
       await axios.patch(
-        "https://ecommerce-backend-ftwg78pea-shanmugams425.vercel.app/user/addcart",
+        "https://ecommerce-backend-nine.vercel.app/server.js/user/addcart",
         { cart: [...cart, { ...product, quantity: 1 }] },
         {
           headers: { Authorization: token },
