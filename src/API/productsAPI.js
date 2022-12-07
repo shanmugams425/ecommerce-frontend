@@ -12,7 +12,7 @@ export default function ProductsAPI() {
 
   useEffect(() => {
     const getProducts = async () => {
-      let link = `https://vercel.com/shanmugams425/ecommerce-backend/mDfBQMubfEqUyZL8QrvHL6ThkiJo/api/products?limit=${
+      let link = `https://ecommerce-backend-nine.vercel.app/api/products?limit=${
         page * 9
       }&${category}&${sort}&title[regex]=${search}`;
       const response = await axios.get(link);

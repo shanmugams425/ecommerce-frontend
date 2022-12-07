@@ -8,7 +8,7 @@ export default function CategoriesAPI() {
   useEffect(() => {
     const getCategories = async () => {
       const response = await axios.get(
-        `https://vercel.com/shanmugams425/ecommerce-backend/mDfBQMubfEqUyZL8QrvHL6ThkiJo/api/category`
+        `https://ecommerce-backend-nine.vercel.app/api/category`
       );
       setCategories(response.data);
     };

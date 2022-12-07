@@ -29,7 +29,7 @@ export default function Register() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "https://vercel.com/shanmugams425/ecommerce-backend/mDfBQMubfEqUyZL8QrvHL6ThkiJo/user/register",
+        "https://ecommerce-backend-nine.vercel.app/user/register",
         { ...user }
       );
       localStorage.setItem("refreshtoken", response.data.accesstoken);
